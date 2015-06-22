@@ -7,8 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00699681B155CBE0017BD5A /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00699671B155CBE0017BD5A /* SwiftyJSON.swift */; };
 		D006CE081AEC7255005502A9 /* WaitlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006CE071AEC7255005502A9 /* WaitlistViewController.swift */; };
 		D006CE0A1AEC7634005502A9 /* shore.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D006CE091AEC7634005502A9 /* shore.JPG */; };
+		D0D7C8801B38A5AD00EC2592 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D7C87F1B38A5AD00EC2592 /* MainPageViewController.swift */; };
+		D0DAB4A81B338A3B00EC647A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DAB4A71B338A3B00EC647A /* SystemConfiguration.framework */; };
+		D0DAB4AA1B338A4100EC647A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DAB4A91B338A4100EC647A /* AVFoundation.framework */; };
+		D0DAB4AC1B338A4700EC647A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DAB4AB1B338A4700EC647A /* CoreData.framework */; };
+		D0DAB4AE1B338A4E00EC647A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DAB4AD1B338A4E00EC647A /* CoreLocation.framework */; };
+		D0DAB4B01B338A5500EC647A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DAB4AF1B338A5500EC647A /* CoreText.framework */; };
+		D0DAB4B21B338A5B00EC647A /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DAB4B11B338A5B00EC647A /* GLKit.framework */; };
+		D0DAB4B41B338A6100EC647A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DAB4B31B338A6100EC647A /* ImageIO.framework */; };
+		D0DAB4B61B338A6B00EC647A /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DAB4B51B338A6B00EC647A /* libc++.dylib */; };
+		D0DAB4B81B338A7800EC647A /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DAB4B71B338A7800EC647A /* libicucore.dylib */; };
+		D0DAB4BA1B338A8000EC647A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DAB4B91B338A8000EC647A /* libz.dylib */; };
+		D0DAB4BC1B338A8700EC647A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DAB4BB1B338A8700EC647A /* OpenGLES.framework */; };
+		D0DAB4BE1B338A8D00EC647A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DAB4BD1B338A8D00EC647A /* QuartzCore.framework */; };
 		D0E760931ACD8DFF004B91FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E760921ACD8DFF004B91FB /* AppDelegate.swift */; };
 		D0E760951ACD8DFF004B91FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E760941ACD8DFF004B91FB /* ViewController.swift */; };
 		D0E760981ACD8DFF004B91FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E760961ACD8DFF004B91FB /* Main.storyboard */; };
@@ -38,8 +52,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D00699671B155CBE0017BD5A /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		D006CE071AEC7255005502A9 /* WaitlistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitlistViewController.swift; sourceTree = "<group>"; };
 		D006CE091AEC7634005502A9 /* shore.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shore.JPG; sourceTree = "<group>"; };
+		D0D7C87F1B38A5AD00EC2592 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		D0DAB4A71B338A3B00EC647A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D0DAB4A91B338A4100EC647A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D0DAB4AB1B338A4700EC647A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D0DAB4AD1B338A4E00EC647A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D0DAB4AF1B338A5500EC647A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		D0DAB4B11B338A5B00EC647A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		D0DAB4B31B338A6100EC647A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D0DAB4B51B338A6B00EC647A /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		D0DAB4B71B338A7800EC647A /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		D0DAB4B91B338A8000EC647A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D0DAB4BB1B338A8700EC647A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D0DAB4BD1B338A8D00EC647A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D0E7608D1ACD8DFF004B91FB /* ImprovingFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImprovingFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E760911ACD8DFF004B91FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0E760921ACD8DFF004B91FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +95,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0DAB4BE1B338A8D00EC647A /* QuartzCore.framework in Frameworks */,
+				D0DAB4BC1B338A8700EC647A /* OpenGLES.framework in Frameworks */,
+				D0DAB4BA1B338A8000EC647A /* libz.dylib in Frameworks */,
+				D0DAB4B81B338A7800EC647A /* libicucore.dylib in Frameworks */,
+				D0DAB4B61B338A6B00EC647A /* libc++.dylib in Frameworks */,
+				D0DAB4B41B338A6100EC647A /* ImageIO.framework in Frameworks */,
+				D0DAB4B21B338A5B00EC647A /* GLKit.framework in Frameworks */,
+				D0DAB4B01B338A5500EC647A /* CoreText.framework in Frameworks */,
+				D0DAB4AE1B338A4E00EC647A /* CoreLocation.framework in Frameworks */,
+				D0DAB4AC1B338A4700EC647A /* CoreData.framework in Frameworks */,
+				D0DAB4AA1B338A4100EC647A /* AVFoundation.framework in Frameworks */,
+				D0DAB4A81B338A3B00EC647A /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,11 +120,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0DAB4A41B33871000EC647A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0DAB4BD1B338A8D00EC647A /* QuartzCore.framework */,
+				D0DAB4BB1B338A8700EC647A /* OpenGLES.framework */,
+				D0DAB4B91B338A8000EC647A /* libz.dylib */,
+				D0DAB4B71B338A7800EC647A /* libicucore.dylib */,
+				D0DAB4B51B338A6B00EC647A /* libc++.dylib */,
+				D0DAB4B31B338A6100EC647A /* ImageIO.framework */,
+				D0DAB4B11B338A5B00EC647A /* GLKit.framework */,
+				D0DAB4AF1B338A5500EC647A /* CoreText.framework */,
+				D0DAB4AD1B338A4E00EC647A /* CoreLocation.framework */,
+				D0DAB4AB1B338A4700EC647A /* CoreData.framework */,
+				D0DAB4A91B338A4100EC647A /* AVFoundation.framework */,
+				D0DAB4A71B338A3B00EC647A /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D0E760841ACD8DFF004B91FB = {
 			isa = PBXGroup;
 			children = (
 				D0E7608F1ACD8DFF004B91FB /* ImprovingFit */,
 				D0E760A51ACD8E00004B91FB /* ImprovingFitTests */,
+				D0DAB4A41B33871000EC647A /* Frameworks */,
 				D0E7608E1ACD8DFF004B91FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,7 +164,9 @@
 				D0E760921ACD8DFF004B91FB /* AppDelegate.swift */,
 				D0E760941ACD8DFF004B91FB /* ViewController.swift */,
 				D0E760BD1ACD97A8004B91FB /* GymViewController.swift */,
+				D0D7C87F1B38A5AD00EC2592 /* MainPageViewController.swift */,
 				D006CE071AEC7255005502A9 /* WaitlistViewController.swift */,
+				D00699671B155CBE0017BD5A /* SwiftyJSON.swift */,
 				D0E760961ACD8DFF004B91FB /* Main.storyboard */,
 				D0E760991ACD8DFF004B91FB /* Images.xcassets */,
 				D0E7609B1ACD8DFF004B91FB /* LaunchScreen.xib */,
@@ -269,6 +331,8 @@
 				D0E760951ACD8DFF004B91FB /* ViewController.swift in Sources */,
 				D0E760BE1ACD97A8004B91FB /* GymViewController.swift in Sources */,
 				D0E760931ACD8DFF004B91FB /* AppDelegate.swift in Sources */,
+				D00699681B155CBE0017BD5A /* SwiftyJSON.swift in Sources */,
+				D0D7C8801B38A5AD00EC2592 /* MainPageViewController.swift in Sources */,
 				D006CE081AEC7255005502A9 /* WaitlistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +412,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -384,6 +449,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -394,9 +460,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ImprovingFit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -404,6 +476,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ImprovingFit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
