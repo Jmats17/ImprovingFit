@@ -12,9 +12,6 @@ class GymViewController : UIViewController,NSURLConnectionDelegate {
     
     
     @IBOutlet var titleLabel : UILabel!
-    @IBOutlet var addressLabel : UILabel!
-    @IBOutlet var websiteLabel : UILabel!
-    @IBOutlet var numberLabel : UILabel!
     @IBOutlet var descriptionLabel : UILabel!
     @IBOutlet var imageGym : UIImageView!
 
@@ -24,7 +21,7 @@ class GymViewController : UIViewController,NSURLConnectionDelegate {
         
         var color : UIColor = UIColor.blackColor()
         super.viewDidLoad()
-        
+        descriptionLabel.backgroundColor = UIColor.darkGrayColor().colorWithAlphaComponent(0.1)
 //        label.layer.borderWidth = 3.0
 //        label.layer.borderColor = color.CGColor
 //        label.layer.cornerRadius = 10.0
@@ -64,11 +61,11 @@ class GymViewController : UIViewController,NSURLConnectionDelegate {
         println(jsonResult)
         let values = jsonResult["gyminfo"]! as! [[String : AnyObject]]
         for value in values {
-            let address = value["gym_address"] as! String
+          //  let address = value["gym_address"] as! String
             let name = value["gym_name"] as! String
-            let phone = value["gym_phone"] as! String
+          //  let phone = value["gym_phone"] as! String
             let descrip = value["gym_description"] as! String
-            let website = value["gym_website"] as! String
+          //  let website = value["gym_website"] as! String
             let url1 = NSURL(string: "http://www.improvingfit.com/groupfitness/uploads/gym526-1jpg")
             let data1 = NSData(contentsOfURL: url1!)
             imageGym.image = UIImage(data: data1!)
@@ -80,19 +77,19 @@ class GymViewController : UIViewController,NSURLConnectionDelegate {
                 titleLabel.text = name
             }
             //////
-            if address == "" {
-                addressLabel.text = "No Address Listed"
-            }
-            else {
-                addressLabel.text = address
-            }
-            //////
-            if phone == "" {
-                numberLabel.text = "No Phone Listed"
-            }
-            else {
-            numberLabel.text = phone
-            }
+//            if address == "" {
+//                addressLabel.text = "No Address Listed"
+//            }
+//            else {
+//                addressLabel.text = address
+//            }
+//            //////
+//            if phone == "" {
+//                numberLabel.text = "No Phone Listed"
+//            }
+//            else {
+//            numberLabel.text = phone
+//            }
             //////
             if descrip == "" {
                 descriptionLabel.text = "No Description Listed"
@@ -100,18 +97,17 @@ class GymViewController : UIViewController,NSURLConnectionDelegate {
             else {
                 descriptionLabel.text = descrip
             }
-            //////
-            if website == "" {
-                websiteLabel.text = "No Website Listed"
-            }
-            else {
-                websiteLabel.text = website
-            }
-            //////
+//            //////
+//            if website == "" {
+//                websiteLabel.text = "No Website Listed"
+//            }
+//            else {
+//                websiteLabel.text = website
+//            }
+//            //////
            
         }
-        //let name = jsonResult["gym_address"]?.string
-       // println("\(name)")
+        
     }
   
     
