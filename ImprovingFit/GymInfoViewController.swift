@@ -17,6 +17,7 @@ class GymInfoViewController : UIViewController {
     @IBOutlet var numberLabel : UILabel!
     @IBOutlet var imageGym : UIImageView!
 
+    var defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
 
     var data = NSMutableData()
     
@@ -25,11 +26,11 @@ class GymInfoViewController : UIViewController {
         numberLabel.backgroundColor = UIColor.darkGrayColor().colorWithAlphaComponent(0.1)
         websiteLabel.backgroundColor = UIColor.darkGrayColor().colorWithAlphaComponent(0.1)
         super.viewDidLoad()
-        startConnection()
+        let url = defaults.stringForKey("gymID")
+        startConnection(url!)
     }
-    func startConnection(){
-        let urlPath = "http://www.improvingfit.com/json/gymjson.php?gym=526"
-        let url : NSURL = NSURL(string: urlPath)!
+    func startConnection(urlPathString : String){
+        let url : NSURL = NSURL(string: urlPathString)!
         var request: NSURLRequest = NSURLRequest(URL: url)
         var connection: NSURLConnection = NSURLConnection(request: request, delegate: self, startImmediately: false)!
         connection.start()
@@ -44,41 +45,152 @@ class GymInfoViewController : UIViewController {
     func connectionDidFinishLoading(connection: NSURLConnection!) {
         var err: NSError
         var jsonResult: NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
-        println(jsonResult)
+      //  println(jsonResult)
         let values = jsonResult["gyminfo"]! as! [[String : AnyObject]]
         for value in values {
-            let address = value["gym_address"] as! String
-            let phone = value["gym_phone"] as! String
-            let website = value["gym_website"] as! String
-            let name = value["gym_name"] as! String
-            let url1 = NSURL(string: "http://www.improvingfit.com/groupfitness/uploads/gym526-1jpg")
-            let data1 = NSData(contentsOfURL: url1!)
-            imageGym.image = UIImage(data: data1!)
-            if title == "" {
-                titleLabel.text = "No Title Listed"
+            if defaults.stringForKey("gymName") == "melrose" {
+                let address = value["gym_address"] as! String
+                let phone = value["gym_phone"] as! String
+                let website = value["gym_website"] as! String
+                let name = value["gym_name"] as! String
+                let url1 = NSURL(string: "http://www.improvingfit.com/groupfitness/uploads/gym526-1jpg")
+                let data1 = NSData(contentsOfURL: url1!)
+                imageGym.image = UIImage(data: data1!)
+                if title == "" {
+                    titleLabel.text = "No Title Listed"
+                }
+                else {
+                    titleLabel.text = name
+                }
+                if address == "" {
+                    addressLabel.text = "No Address Listed"
+                }
+                else {
+                    addressLabel.text = address
+                }
+                //////
+                if phone == "" {
+                    numberLabel.text = "No Phone Listed"
+                }
+                else {
+                    numberLabel.text = phone
+                }
+                
+                if website == "" {
+                    websiteLabel.text = "No Website Listed"
+                }
+                else {
+                    websiteLabel.text = website
+                }
+ 
             }
-            else {
-                titleLabel.text = name
+            if defaults.stringForKey("gymName") == "lynn" {
+                let address = value["gym_address"] as! String
+                let phone = value["gym_phone"] as! String
+                let website = value["gym_website"] as! String
+                let name = value["gym_name"] as! String
+              //  let url1 = NSURL(string: "http://www.improvingfit.com/groupfitness/uploads/gym526-1jpg")
+              //  let data1 = NSData(contentsOfURL: url1!)
+                imageGym.image = UIImage(named: "exercise-with-dumbbells-symbol-hi.png")
+                if title == "" {
+                    titleLabel.text = "No Title Listed"
+                }
+                else {
+                    titleLabel.text = name
+                }
+                if address == "" {
+                    addressLabel.text = "No Address Listed"
+                }
+                else {
+                    addressLabel.text = address
+                }
+                //////
+                if phone == "" {
+                    numberLabel.text = "No Phone Listed"
+                }
+                else {
+                    numberLabel.text = phone
+                }
+                
+                if website == "" {
+                    websiteLabel.text = "No Website Listed"
+                }
+                else {
+                    websiteLabel.text = website
+                }
+                
             }
-            if address == "" {
-                addressLabel.text = "No Address Listed"
+            if defaults.stringForKey("gymName") == "torigian" {
+                let address = value["gym_address"] as! String
+                let phone = value["gym_phone"] as! String
+                let website = value["gym_website"] as! String
+                let name = value["gym_name"] as! String
+             //   let url1 = NSURL(string: "http://www.improvingfit.com/groupfitness/uploads/gym526-1jpg")
+             //   let data1 = NSData(contentsOfURL: url1!)
+                imageGym.image = UIImage(named: "exercise-with-dumbbells-symbol-hi.png")
+                if title == "" {
+                    titleLabel.text = "No Title Listed"
+                }
+                else {
+                    titleLabel.text = name
+                }
+                if address == "" {
+                    addressLabel.text = "No Address Listed"
+                }
+                else {
+                    addressLabel.text = address
+                }
+                //////
+                if phone == "" {
+                    numberLabel.text = "No Phone Listed"
+                }
+                else {
+                    numberLabel.text = phone
+                }
+                
+                if website == "" {
+                    websiteLabel.text = "No Website Listed"
+                }
+                else {
+                    websiteLabel.text = website
+                }
+                
             }
-            else {
-                addressLabel.text = address
-            }
-            //////
-            if phone == "" {
-                numberLabel.text = "No Phone Listed"
-            }
-            else {
-            numberLabel.text = phone
-            }
-
-            if website == "" {
-                websiteLabel.text = "No Website Listed"
-            }
-            else {
-                websiteLabel.text = website
+            if defaults.stringForKey("gymName") == "saugus" {
+                let address = value["gym_address"] as! String
+                let phone = value["gym_phone"] as! String
+                let website = value["gym_website"] as! String
+                let name = value["gym_name"] as! String
+                let url1 = NSURL(string: "http://www.improvingfit.com/groupfitness/uploads/gym579-1.jpg")
+                let data1 = NSData(contentsOfURL: url1!)
+                imageGym.image = UIImage(data: data1!)
+                if title == "" {
+                    titleLabel.text = "No Title Listed"
+                }
+                else {
+                    titleLabel.text = name
+                }
+                if address == "" {
+                    addressLabel.text = "No Address Listed"
+                }
+                else {
+                    addressLabel.text = address
+                }
+                //////
+                if phone == "" {
+                    numberLabel.text = "No Phone Listed"
+                }
+                else {
+                    numberLabel.text = phone
+                }
+                
+                if website == "" {
+                    websiteLabel.text = "No Website Listed"
+                }
+                else {
+                    websiteLabel.text = website
+                }
+                
             }
             
         }

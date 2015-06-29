@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>42523B60-B12A-4A92-8095-C6F056175661</string>
 	<key>IDESourceControlProjectName</key>
-	<string>ImprovingFit</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>27AD7E93CDBBBBCEB5E2DF95AF9894934083E32D</key>
 		<string>https://github.com/Jmats17/ImprovingFit.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ImprovingFit.xcodeproj</string>
+	<string>ImprovingFit.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>27AD7E93CDBBBBCEB5E2DF95AF9894934083E32D</key>
